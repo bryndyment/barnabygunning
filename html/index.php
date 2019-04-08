@@ -25,7 +25,7 @@
 			<div id="hero"></div>
 			<div id="logo"></div>
 			<div id="title">Barnaby Gunning Studio</div>
-			<div id="contact">63 Loudoun Road,<br>London NW8 0DQ.<br>+44 20 73 72 24 24</div>
+			<div id="contact">63 Loudoun Road,<br>London NW8 0DQ.<br>+44 20 39 35 79 88</div>
 		</div>
 	</body>
 </html>

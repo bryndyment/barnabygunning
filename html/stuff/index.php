@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-
 <?php
-	echo "hello";
-?>
-
+	
+	?>
 <html>
   <head>
     <title>Come Facciamo 2019</title>

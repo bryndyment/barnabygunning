@@ -33,13 +33,13 @@
 		 var pointsString = block[4];
 		 var pointsStrings = pointsString.split(";");
 		 var points = [];
-		 var pointString, floatStrings, latitude, longitude;
+		 var pointString, floatStrings, lati, longi;
 		 for (var i = 0; i < pointsStrings.length; i++){
 			 pointString = pointsStrings[i];
 			 floatStrings = pointsString.split(",");
-			 latitude = floatStrings[0];
-			 longitude = floatStrings[1];
-			 points.push({lat: latitude, lng:longitude});
+			 lati = floatStrings[0];
+			 longi = floatStrings[1];
+			 points.push({lat: lati, lng:longi});
 		 }
 		
         map = new google.maps.Map(document.getElementById('map'), {

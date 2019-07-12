@@ -32,7 +32,7 @@
 		 var longitude = parseFloat(block[3]);
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat:latitude, lng:longitude},
-          zoom: 12
+          zoom: 15
         });
       }
     </script>

@@ -30,10 +30,31 @@
       function initMap() {
 	     var latitude = parseFloat(block[2]);
 		 var longitude = parseFloat(block[3]);
+		 var pointsString = block[4];
+		 var pointsStrings = pointsString.split(";");
+		 var points = [];
+		 var pointString, floatStrings, latitude, longitude;
+		 for (var i = 0; i < pointsStrings.length; i++){
+			 pointString = pointsStrings[i];
+			 floatStrings = pointsString.split(",");
+			 latitude = floatStrings[0];
+			 longitude = floatStrings[1];
+			 points.push({lat: latitude, lng:longitude});
+		 }
+		
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat:latitude, lng:longitude},
           zoom: 15
         });
+        var poly = new google.maps.Polygon({
+	        paths: points,
+	        strokeColor: '#FF0000',
+	        strokeOpacity: 0.8,
+			strokeWeight: 2,
+			fillColor: '#FF0000',
+			fillOpacity: 0.35
+        });
+        poly.setMap(map);
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaSsrqvX1yY-FVcIsfXTqR-MDFgICC7io&callback=initMap"

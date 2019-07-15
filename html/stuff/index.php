@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	
+
 	?>
 <html>
   <head>
@@ -26,35 +26,14 @@
     <script>
       var map;
       var block = Array('1', 'ClickDay 01', '42.351', '13.3971', '42.352131,13.39682;42.351372,13.39844;42.350719,13.39997;42.3489,13.39908;42.3493,13.39793;42.35059,13.39566;42.350971,13.395944;42.351234,13.39529;42.351311,13.39529;42.352032,13.3967;42.352131,13.39682', '0', 'Zones', 'v');
-      
+
       function initMap() {
 	     var latitude = parseFloat(block[2]);
 		 var longitude = parseFloat(block[3]);
-		 var pointsString = block[4];
-		 var pointsStrings = pointsString.split(";");
-		 var points = [];
-		 var pointString, floatStrings, lati, longi;
-		 for (var i = 0; i < pointsStrings.length; i++){
-			 pointString = pointsStrings[i];
-			 floatStrings = pointsString.split(",");
-			 lati = floatStrings[0];
-			 longi = floatStrings[1];
-			 points.push({lat: lati, lng:longi});
-		 }
-		
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat:latitude, lng:longitude},
-          zoom: 15
+          zoom: 16
         });
-        var poly = new google.maps.Polygon({
-	        paths: points,
-	        strokeColor: '#FF0000',
-	        strokeOpacity: 0.8,
-			strokeWeight: 2,
-			fillColor: '#FF0000',
-			fillOpacity: 0.35
-        });
-        poly.setMap(map);
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaSsrqvX1yY-FVcIsfXTqR-MDFgICC7io&callback=initMap"

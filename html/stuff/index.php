@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>HEY BRYN - I'm changing this at 11:10 UK Time!</title>
+    <title>HEY WHAT THE HECK? - I'm changing this at 11:10 UK Time!</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -36,7 +36,7 @@
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaSsrqvX1yY-FVcIsfXTqR-MDFgICC7io&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqmvpV7hQV1jONLxqJnu-sfRJ453L5Ps0&callback=initMap"
     async defer></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>REVISION 09:55 28/09/19</title>
+    <title>REVISION 10:05 28/09/19</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -25,7 +25,7 @@
     <div id="map"></div>
     <script>
       var map;
-      var school = ['school','42.3661079,13.3584066'];
+      var school = ['Convitto Nazionale MUSP',42.3661079,13.3584066];
       var block = Array('1', 'ClickDay 01', '42.351', '13.3971', '42.352131,13.39682;42.351372,13.39844;42.350719,13.39997;42.3489,13.39908;42.3493,13.39793;42.35059,13.39566;42.350971,13.395944;42.351234,13.39529;42.351311,13.39529;42.352032,13.3967;42.352131,13.39682', '0', 'Zones', 'v');
 
       function initMap() {
@@ -38,8 +38,7 @@
 	          { featureType: 'poi', stylers: [{visibility: 'off'}] }
 	          ]
         });
-        var posArray = school[1].split(",");
-        var pos = {lat: posArray[0], lng: posArray[1]};
+        var pos = {lat: school[1], lng: school[2]};
         var marker = new google.maps.Marker({
 	         position: pos,
 			 map: map,

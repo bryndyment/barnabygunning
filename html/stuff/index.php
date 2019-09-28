@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>REVISION 10:05 28/09/19</title>
+    <title>REVISION 10:08 28/09/19</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -34,16 +34,16 @@
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat:latitude, lng:longitude},
           zoom: 16,
-          styles: [
-	          { featureType: 'poi', stylers: [{visibility: 'off'}] }
-	          ]
+         
         });
         var pos = {lat: school[1], lng: school[2]};
         var marker = new google.maps.Marker({
 	         position: pos,
-			 map: map,
 			 title: school[0]
-        });
+        })
+        
+        marker.setMap(map);
+
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaSsrqvX1yY-FVcIsfXTqR-MDFgICC7io&callback=initMap"

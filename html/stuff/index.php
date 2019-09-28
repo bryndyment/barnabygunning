@@ -32,7 +32,10 @@
 		 var longitude = parseFloat(block[3]);
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat:latitude, lng:longitude},
-          zoom: 16
+          zoom: 16,
+          styles: [
+	          { featureType: 'poi.business', stylers: [{visibility: 'off'}] }
+	          ]
         });
       }
     </script>

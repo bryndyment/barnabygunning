@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>REVISION 10:30 28/09/19</title>
+    <title>REVISION 10:40 28/09/19</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -24,7 +24,8 @@
   <body>
     <div id="map"></div>
     <script>
-		var map;
+	    	var pinlet = "https://www.google.com/maps/vt/icon/name=assets/icons/poi/tactile/pinlet_shadow-2-medium.png,assets/icons/poi/tactile/pinlet_outline_v2-2-medium.png,assets/icons/poi/tactile/pinlet-2-medium.png,assets/icons/poi/quantum/pinlet/school_pinlet-2-medium.png&highlight=ff000000,ffffff,7b9eb0,ffffff&color=ff000000?scale=2";
+	    	var map;
 		var schools = [
 			["Convitto Nazionale","Domenico Cotugno","AQVC050005",42.365952,13.361069,"convittocotugno.gov.it"],
 			["IPSIASAR","Leonardo Da Vinci","AQRI007011",42.358953,13.400658,"www.iisdavincicolecchiaq.gov.it"],
@@ -60,7 +61,8 @@
 				console.log(school[2]);
 				var marker = new google.maps.Marker({
 	        			position: {lat: school[3], lng: school[4]},
-				 	title: school[2]
+				 	title: school[2],
+					icon: pinlet
         			})
 				marker.setMap(map);
 			}

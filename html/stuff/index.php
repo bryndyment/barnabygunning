@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>REVISION 10:40 28/09/19</title>
+    <title>REVISION 10:45 28/09/19</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -24,7 +24,7 @@
   <body>
     <div id="map"></div>
     <script>
-	    	var pinlet = "https://www.google.com/maps/vt/icon/name=assets/icons/poi/tactile/pinlet_shadow-2-medium.png,assets/icons/poi/tactile/pinlet_outline_v2-2-medium.png,assets/icons/poi/tactile/pinlet-2-medium.png,assets/icons/poi/quantum/pinlet/school_pinlet-2-medium.png&highlight=ff000000,ffffff,7b9eb0,ffffff&color=ff000000?scale=2";
+	    	var pinlet = "https://www.google.com/maps/vt/icon/name=assets/icons/poi/tactile/pinlet_shadow-2-medium.png,assets/icons/poi/tactile/pinlet_outline_v2-2-medium.png,assets/icons/poi/tactile/pinlet-2-medium.png,assets/icons/poi/quantum/pinlet/school_pinlet-2-medium.png&highlight=ff000000,ffffff,7b9eb0,ffffff&color=ff000000?scale=1";
 	    	var map;
 		var schools = [
 			["Convitto Nazionale","Domenico Cotugno","AQVC050005",42.365952,13.361069,"convittocotugno.gov.it"],
@@ -46,13 +46,13 @@
 			["Liceo Scientifico","A. Bafile","AQPS018016",42.356010,13.413246,""],
 			["Liceo Scientifico","Amedeo d’Aosta","AQPS01601E",42.355177,13.412871,""]
 		];
-		var block = Array('1', 'ClickDay 01', '42.351', '13.3971', '42.352131,13.39682;42.351372,13.39844;42.350719,13.39997;42.3489,13.39908;42.3493,13.39793;42.35059,13.39566;42.350971,13.395944;42.351234,13.39529;42.351311,13.39529;42.352032,13.3967;42.352131,13.39682', '0', 'Zones', 'v');		
+		var centre = [42.351,13.3971];
 		function initMap() {
 	    		var latitude = parseFloat(block[2]);
 			var longitude = parseFloat(block[3]);
 	       		map = new google.maps.Map(document.getElementById('map'), {
-          		center: {lat:latitude, lng:longitude},
-          		zoom: 16,
+          		center: {lat:centre[0], lng:centre[1]},
+          		zoom: 14,
           		styles: [{ featureType: 'poi', stylers: [{visibility: 'off'}] }]
 			}); 
 		

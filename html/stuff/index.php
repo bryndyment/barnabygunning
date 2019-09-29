@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>REVISION 10:27 28/09/19</title>
+    <title>REVISION 10:30 28/09/19</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -32,7 +32,7 @@
 			["I.P.A.A","","AQRA007019",42.356393,13.414203,"www.iisdavincicolecchiaq.gov.it"],
 			["Ist. Comprensivo","Gianni Rodari","AQIC83300N",42.357233,13.373621,""],
 			["Liceo Artistico","Fulvio Muzi","AQSD01801L",42.356010,13.413246,"www.iisbafile.gov.it"],
-			["Istituto Magistrale","Vittorio Emanuele II","AQPM050002",42.366019,13.371653,"www.liceocotugno.it"]
+			["Istituto Magistrale","Vittorio Emanuele II","AQPM050002",42.366019,13.371653,"www.liceocotugno.it"],
 			["I.I.S","Leonardo Da Vinci - Ottavio Colecchi","AQIS007009",42.359009,13.400923,""],
 			["I.I.S","A. Bafile","AQIS01800Q",42.356010,13.413246,""],
 			["Istituto Superiore","Amedeo d’Aosta","AQIS016004",42.355177,13.412871,""],

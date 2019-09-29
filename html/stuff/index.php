@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>REVISION 09:59 28/09/19</title>
+    <title>REVISION 10:02 28/09/19</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -44,7 +44,7 @@
           		styles: [{ featureType: 'poi', stylers: [{visibility: 'off'}] }]
 			}); 
 		
-			for (i=0; i<schools.count; i++){
+			for (i=0; i<schools.length; i++){
 				var school = schools[i];
 				console.log(school[2]);
 				var marker = new google.maps.Marker({

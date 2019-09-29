@@ -4,7 +4,7 @@
 	?>
 <html>
   <head>
-    <title>REVISION 10:45 28/09/19</title>
+    <title>REVISION 10:46 28/09/19</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -48,8 +48,6 @@
 		];
 		var centre = [42.351,13.3971];
 		function initMap() {
-	    		var latitude = parseFloat(block[2]);
-			var longitude = parseFloat(block[3]);
 	       		map = new google.maps.Map(document.getElementById('map'), {
           		center: {lat:centre[0], lng:centre[1]},
           		zoom: 14,

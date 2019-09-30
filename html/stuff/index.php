@@ -99,13 +99,15 @@
           		styles: [{ featureType: 'poi', stylers: [{visibility: 'off'}] }]
 			}); 
 		
+ 			var transitLayer = new google.maps.TransitLayer();
+  			transitLayer.setMap(map);
+			
 			for (i=0; i<schools.length; i++){
 				var school = schools[i];
 				console.log(school[2]);
 				var marker = new google.maps.Marker({
 	        			position: {lat: school[3], lng: school[4]},
 				 	title: school[0] + school[1],
-					label: school[2],
 					icon: pinlet
         			})
 				marker.setMap(map);

@@ -7,6 +7,7 @@
     <title>SCUOLE L'AQUILA</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -19,10 +20,20 @@
         margin: 0;
         padding: 0;
       }
+
+			#title {
+				font-family: 'Varela Round', sans-serif;
+				size:128px;
+				color:#ffffff;
+				z-index: 1000;
+				width:100%;
+				top:10px;
+			}
     </style>
   </head>
   <body>
     <div id="map"></div>
+		<div id="title">QUILANUOVASCUOL'A</div>
     <script>
 	    	var pinlets = [
 			"https://www.google.com/maps/vt/icon/name=assets/icons/poi/tactile/pinlet_shadow-2-medium.png,assets/icons/poi/tactile/pinlet_outline_v2-2-medium.png,assets/icons/poi/tactile/pinlet-2-medium.png,assets/icons/poi/quantum/pinlet/school_pinlet-2-medium.png&highlight=ff000000,ffffff,444444,ffffff&color=ff000000?scale=1",

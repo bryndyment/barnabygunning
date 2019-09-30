@@ -116,6 +116,11 @@
 				 	title: school[1] + school[2],
 					icon: pinlets[school[0]]
         			})
+				
+				marker.addListener('click', function() {
+  			 	map.setZoom(8);
+	    			map.setCenter(marker.getPosition());
+				});
 				marker.setMap(map);
 			}
 		}

@@ -108,6 +108,9 @@
  			var transitLayer = new google.maps.TransitLayer();
   			transitLayer.setMap(map);
 			
+			var infowindow = new google.maps.InfoWindow({
+				maxWidth: 200
+			});
 			for (i=0; i<schools.length; i++){
 				var school = schools[i];
 				console.log(school[3]);
@@ -116,10 +119,12 @@
 				 	title: school[1] + school[2],
 					icon: pinlets[school[0]]
         			})
-				
+			
 				marker.addListener('click', function() {
   			 	map.setZoom(8);
 	    			map.setCenter(marker.getPosition());
+					infowindow.open(map, marker);
+					infowindow.content = "<div>Hello "+i+"</div>"
 				});
 				marker.setMap(map);
 			}

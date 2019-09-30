@@ -104,7 +104,8 @@
 				console.log(school[2]);
 				var marker = new google.maps.Marker({
 	        			position: {lat: school[3], lng: school[4]},
-				 	title: school[2],
+				 	title: school[0] + school[1],
+					label: school[2],
 					icon: pinlet
         			})
 				marker.setMap(map);

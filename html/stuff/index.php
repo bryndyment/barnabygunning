@@ -121,9 +121,10 @@
         			})
 			
 				marker.addListener('click', function() {
-	    			map.setCenter(marker.getPosition());
+				        var content = schools[i][3];
+	    				map.setCenter(marker.getPosition());
 					infowindow.open(map, marker);
-					infowindow.setContent("<div>Hello "+i+"</div>");
+					infowindow.setContent("<div>"+content+"</div>");
 				});
 				marker.setMap(map);
 			}

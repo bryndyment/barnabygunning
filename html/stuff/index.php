@@ -121,10 +121,9 @@
         			})
 			
 				marker.addListener('click', function() {
-  			 	map.setZoom(8);
 	    			map.setCenter(marker.getPosition());
 					infowindow.open(map, marker);
-					infowindow.content = "<div>Hello "+i+"</div>"
+					infowindow.setContent("<div>Hello "+i+"</div>");
 				});
 				marker.setMap(map);
 			}

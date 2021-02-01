@@ -1,0 +1,22 @@
+{
+  "name": "barnabygunning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Barnaby Gunning Studio.",
+  "author": "Barnaby Gunning",
+  "dependencies": {
+    "gatsby": "^2.31.1",
+    "gatsby-plugin-netlify": "2.10.0",
+    "gatsby-plugin-react-helmet": "3.9.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.1.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  }
+}

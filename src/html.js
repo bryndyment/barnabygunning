@@ -20,7 +20,6 @@ const Html = ({ body, bodyAttributes, headComponents, htmlAttributes, preBodyCom
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
       <link rel="manifest" href="/manifest.json" />
-      <link rel="stylesheet" type='text/css' href="_a.php" />
       <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport" />
       <meta name="google-site-verification" content="3Vnn-1iH6NSvomoglpbrfSyIDrZpG4UKvElhXj-YUv8" />
       <meta name="msapplication-TileColor" content="#ffffff" />
